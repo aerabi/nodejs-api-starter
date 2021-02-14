@@ -4,6 +4,7 @@
   "description": "Remote daily stand-up mood detector",
   "main": "dist/server.ts",
   "scripts": {
+    "build:all": "npm run build:routes && npm run build:ts",
     "build:routes": "tsoa routes",
     "build:ts": "tsc -p src",
     "server": "node dist/server.js",
