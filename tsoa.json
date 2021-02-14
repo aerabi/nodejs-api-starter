@@ -10,6 +10,7 @@
   "routes": {
     "routesDir": "./src/routes",
     "basePath": "/api/v1",
+    "iocModule": "src/ioc",
     "middleware": "express"
   }
 }
