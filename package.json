@@ -7,6 +7,7 @@
     "build:all": "npm run build:routes && npm run build:ts",
     "build:routes": "tsoa routes",
     "build:ts": "tsc -p src",
+    "postinstall": "npm run build:all",
     "server": "node dist/server.js",
     "start": "npm run server",
     "test": "echo \"Error: no test specified\" && exit 1"
