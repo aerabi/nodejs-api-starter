@@ -11,6 +11,7 @@
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
     "server": "node dist/server.js",
     "start": "npm run server",
+    "test:lint": "eslint 'src/**/*.{js,ts,tsx}'",
     "test": "jest --config jestconfig.json"
   },
   "repository": {
