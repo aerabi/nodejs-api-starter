@@ -5,10 +5,11 @@
         "baseUrl": "",
         "target": "es5",
         "lib": ["es6", "dom"],
-        "types": ["reflect-metadata"],
+        "types": ["reflect-metadata", "jest"],
         "module": "commonjs",
         "moduleResolution": "node",
         "emitDecoratorMetadata": true,
         "allowSyntheticDefaultImports": true
-    }
+    },
+    "exclude" : ["src/**/*.spec.ts"]
 }
