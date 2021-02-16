@@ -1,7 +1,6 @@
-import "reflect-metadata";
+import 'reflect-metadata';
 
-import {injectable} from "inversify";
+import { injectable } from 'inversify';
 
 @injectable()
-export class IndexService {
-}
+export class IndexService {}
