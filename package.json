@@ -8,6 +8,7 @@
     "build:routes": "tsoa routes",
     "build:ts": "tsc -p src",
     "server": "node dist/server.js",
+    "start": "npm run server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
