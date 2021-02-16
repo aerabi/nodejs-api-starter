@@ -1,7 +1,7 @@
 import "reflect-metadata";
 
-import {provideSingleton} from "../../ioc";
+import {injectable} from "inversify";
 
-@provideSingleton(IndexService)
+@injectable()
 export class IndexService {
 }

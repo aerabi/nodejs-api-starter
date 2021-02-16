@@ -1,11 +1,10 @@
 import { Body, Controller, Path, Post, Route, SuccessResponse } from 'tsoa';
 import { MessageCreationRequest } from "./data/index.models";
-import {inject} from "inversify";
+import {inject, injectable} from "inversify";
 import {IndexService} from "./index.service";
-import {provideSingleton} from "../../ioc";
 
 @Route('')
-@provideSingleton(IndexController)
+@injectable()
 export class IndexController extends Controller {
     constructor(@inject(IndexService) private service: IndexService) {
         super();
