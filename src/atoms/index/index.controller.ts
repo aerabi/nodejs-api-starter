@@ -1,4 +1,4 @@
-import { Body, Controller, Path, Post, Route, SuccessResponse } from 'tsoa';
+import { Body, Controller, Get, Path, Post, Route, SuccessResponse } from 'tsoa';
 import { DailyReport, MessageCreationRequest } from './data/index.models';
 import { inject, injectable } from 'inversify';
 import { IndexService } from './index.service';
@@ -18,5 +18,10 @@ export class IndexController extends Controller {
       .createMessage(userId, requestBody)
       .pipe(tap((_) => this.setStatus(201)))
       .toPromise();
+  }
+
+  @Get('user/{userId}')
+  public async getById(@Path() userId: string): Promise<DailyReport[]> {
+    return this.service.getById(userId).toPromise();
   }
 }

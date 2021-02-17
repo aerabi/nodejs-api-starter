@@ -9,6 +9,6 @@ export interface DailyReport {
   timestamp: Date;
   userId: string;
   message: string;
-  verified: boolean;
-  confident: boolean;
+  verified?: boolean;
+  confident?: boolean;
 }

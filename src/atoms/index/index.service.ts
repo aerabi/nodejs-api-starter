@@ -30,4 +30,8 @@ export class IndexService {
         }),
       );
   }
+
+  public getById(userId: string): Observable<DailyReport[]> {
+    return this.repository.getById(userId);
+  }
 }

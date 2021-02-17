@@ -15,4 +15,8 @@ export class IndexRepository {
     this.messageList.push(report);
     return of(report);
   }
+
+  public getById(userId: string): Observable<DailyReport[]> {
+    return of(this.messageList.filter((report) => report.userId === userId));
+  }
 }
