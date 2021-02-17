@@ -35,8 +35,9 @@
     "inversify-binding-decorators": "^4.0.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.6.3",
+    "rxjs-pipe-ext": "^3.0.0",
     "tsoa": "^3.5.2",
-    "typingdnaclient-rxjs": "^1.1.1"
+    "typingdnaclient-rxjs": "^1.2.0"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.0",

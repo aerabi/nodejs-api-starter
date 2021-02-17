@@ -9,6 +9,8 @@ export interface DailyReport {
   timestamp: Date;
   userId: string;
   message: string;
-  verified?: boolean;
-  confident?: boolean;
+  score?: number;
+  confidence?: number;
+  netScore?: number;
+  comparedPatterns?: number;
 }
