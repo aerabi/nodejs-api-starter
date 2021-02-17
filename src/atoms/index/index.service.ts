@@ -24,7 +24,7 @@ export class IndexService {
       .pipe(
         mergeMap((response) => {
           if (response.messageCode !== 1) {
-            this.repository.save(userId, request.message, undefined, undefined);
+            return this.repository.save(userId, request.message, undefined, undefined);
           }
           return this.repository.save(userId, request.message, response.result, response.highConfidence);
         }),
