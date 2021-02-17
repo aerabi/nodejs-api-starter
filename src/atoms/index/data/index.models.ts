@@ -4,3 +4,11 @@ export interface MessageCreationRequest {
   typingPattern1?: string;
   typingPattern2?: string;
 }
+
+export interface DailyReport {
+  timestamp: Date;
+  userId: string;
+  message: string;
+  verified: boolean;
+  confident: boolean;
+}

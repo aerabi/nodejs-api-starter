@@ -5,6 +5,7 @@ import { Controller } from 'tsoa';
 import { buildProviderModule, fluentProvide } from 'inversify-binding-decorators';
 import { IndexController } from './atoms/index/index.controller';
 import { IndexService } from './atoms/index/index.service';
+import { IndexRepository } from './atoms/index/index.repository';
 
 export const provideSingleton = <T>(identifier: interfaces.ServiceIdentifier<T>) => fluentProvide(identifier).inSingletonScope().done();
 
@@ -14,5 +15,6 @@ iocContainer.load(buildProviderModule());
 
 iocContainer.bind<IndexController>(IndexController).toSelf().inSingletonScope();
 iocContainer.bind<IndexService>(IndexService).toSelf().inSingletonScope();
+iocContainer.bind<IndexRepository>(IndexRepository).toSelf().inSingletonScope();
 
 export { iocContainer };
