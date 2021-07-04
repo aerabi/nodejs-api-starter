@@ -1,2 +1,4 @@
 /node_modules/
 /src/routes/routes.ts
+/dist/
+/.idea/
