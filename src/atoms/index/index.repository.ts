@@ -1,7 +1,6 @@
 import { injectable } from 'inversify';
 import { Observable, of } from 'rxjs';
 import { DailyReport } from './data/index.models';
-import { VerifyResponse } from 'typingdnaclient-rxjs/lib/types';
 
 @injectable()
 export class IndexRepository {
@@ -11,15 +10,11 @@ export class IndexRepository {
     this.messageList = [];
   }
 
-  public save(userId: string, message: string, response?: VerifyResponse): Observable<DailyReport> {
+  public save(userId: string, message: string): Observable<DailyReport> {
     const report = {
       timestamp: new Date(),
       userId,
       message,
-      score: response?.score,
-      confidence: response?.confidence,
-      netScore: response?.netScore,
-      comparedPatterns: response?.comparedSamples,
     };
     this.messageList.push(report);
     return of(report);
