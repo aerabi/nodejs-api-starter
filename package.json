@@ -1,7 +1,7 @@
 {
-  "name": "daily-whats-up",
+  "name": "nodejs-api-starter",
   "version": "1.0.0",
-  "description": "Remote daily stand-up mood detector",
+  "description": "Node.js API Starter",
   "main": "dist/server.ts",
   "scripts": {
     "build:all": "npm run build:routes && npm run build:ts",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aerabi/daily-whats-up.git"
+    "url": "git+https://github.com/aerabi/nodejs-api-starter.git"
   },
   "author": "Mohammad-Ali A'RÂBI",
   "license": "MIT",
