@@ -36,7 +36,7 @@
     "inversify-binding-decorators": "^4.0.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.1.0",
-    "tsoa": "^3.5.2"
+    "tsoa": "^6.0.0"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.0",
