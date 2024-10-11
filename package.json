@@ -31,7 +31,7 @@
   "dependencies": {
     "@rxjsx/rxjsx": "^0.1.0",
     "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "express": "^4.21.1",
     "inversify": "^5.0.5",
     "inversify-binding-decorators": "^4.0.0",
     "reflect-metadata": "^0.1.13",
