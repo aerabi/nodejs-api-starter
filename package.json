@@ -35,7 +35,7 @@
     "inversify": "^5.0.5",
     "inversify-binding-decorators": "^4.0.0",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.1.0",
+    "rxjs": "^7.8.0",
     "tsoa": "^3.5.2"
   },
   "devDependencies": {
